@@ -9,18 +9,25 @@
   align-content: stretch;
   gap: 10px;
   border: 1px solid green;
-  background-color: cornsilk;
+  background-color: antiquewhite;
+  padding: 5px;
 }
 
 .widget {
-  width: 80%;
+  width: 50%;
   margin: auto;
   border: 1px solid gray;
   border-radius: 5px;
+  padding: 10px;
+  ;
 }
 
 .widget:nth-of-type(2n) {
-  background-color: darkolivegreen;
+  background-color: beige;
+}
+
+.widget:nth-of-type(2n+1) {
+  background-color: bisque;
 }
 
 .App-logo {
@@ -49,4 +56,8 @@
   gap: 10px;
   margin: auto;
   align-content: center;
+}
+
+.cities-widget ul {
+  list-style-type: none;
 }
