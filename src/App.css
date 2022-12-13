@@ -65,34 +65,21 @@
 .progress-widget {
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .progress-bar {
-  width: 150px;
-  height: 45px;
-  border-radius: 5px;
+  width: 80%;
+  height: 25px;
+  border-radius: 8px;
   background-color: aquamarine;
 }
 
 .progress-bar-indicator {
-  animation: 4s slidein;
+  height: 100%;
   transition: 2s ease 0.3s;
+  transition-property: width;
   background-color: brown;
-}
-
-@keyframes slidein {
-
-  from {
-    background-color: pink;
-  }
-
-  50% {
-    background-color: bisque;
-  }
-
-  to {
-    background-color: aquamarine;
-  }
-
+  border-radius: 8px;
 }

@@ -1,10 +1,10 @@
 import React, { useState, useEffect, ChangeEvent, useRef } from 'react';
+import styled from "styled-components";
 
-
-// const styledDiv = styled.div`
-// ${props => `
-// width: ${props['data-width']}`}
-// `;
+const StyledDiv = styled.div`
+${(props: { [x: string]: any; }) => `
+width: ${props['data-width']}%`}
+`;
 
 export const ProgressBar = () => {
     const [wid, setWid] = useState(0);
@@ -17,12 +17,16 @@ export const ProgressBar = () => {
         }
     }
 
-    return <section className='widget progress-widget'>
-        <p>
-            <div className='progress-bar'>
-                <div data-width={wid} ref={progressRef} className='progress-bar-indicator'></div>
-            </div>
-            Enter number: <input type="number" value={wid} onChange={handleChange}></input>
-        </p>
-    </section>
+    return <>
+        <h3> Progress bar</h3>
+        <section className='widget progress-widget'>
+            {wid < 100 ?
+
+                <p className='progress-bar' >
+                    <StyledDiv data-width={wid} ref={progressRef} className='progress-bar-indicator' /></p>
+                : <p>Please select a number less than 100</p>}
+            Enter number: <input type="number" value={wid} onChange={handleChange} />
+
+        </section>
+    </>
 }
