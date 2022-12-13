@@ -4,6 +4,7 @@ import './App.css';
 import TimeClock from './components/time-clock';
 import StopWatch from './components/stop-watch';
 import TodoList from './components/todo-list';
+import { ProgressBar } from './components/progress-bar';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <TimeClock />
       <StopWatch />
       <TodoList />
+      <ProgressBar />
     </div>
   );
 }

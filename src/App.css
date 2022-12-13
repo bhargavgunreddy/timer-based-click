@@ -61,3 +61,38 @@
 .cities-widget ul {
   list-style-type: none;
 }
+
+.progress-widget {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.progress-bar {
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: aquamarine;
+}
+
+.progress-bar-indicator {
+  animation: 4s slidein;
+  transition: 2s ease 0.3s;
+  background-color: brown;
+}
+
+@keyframes slidein {
+
+  from {
+    background-color: pink;
+  }
+
+  50% {
+    background-color: bisque;
+  }
+
+  to {
+    background-color: aquamarine;
+  }
+
+}
