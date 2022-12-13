@@ -2,7 +2,7 @@ import React, { useState, useEffect, ChangeEvent, useRef } from 'react';
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
-${(props: { [x: string]: any; }) => `
+${(props: { ['data-width']: number; }) => `
 width: ${props['data-width']}%`}
 `;
 
