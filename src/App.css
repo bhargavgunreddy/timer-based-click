@@ -83,3 +83,37 @@
   background-color: brown;
   border-radius: 8px;
 }
+
+.form-widget {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+fieldset input {
+  width: 60%;
+}
+
+fieldset label {
+  width: 40%;
+}
+
+table {
+  width: 80%;
+}
+
+td {
+  min-width: 40%;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}

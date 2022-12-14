@@ -5,6 +5,7 @@ import TimeClock from './components/time-clock';
 import StopWatch from './components/stop-watch';
 import TodoList from './components/todo-list';
 import { ProgressBar } from './components/progress-bar';
+import { FormWidget } from './components/form-widget';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <StopWatch />
       <TodoList />
       <ProgressBar />
+      <FormWidget />
     </div>
   );
 }
