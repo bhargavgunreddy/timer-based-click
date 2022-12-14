@@ -20,11 +20,11 @@ export const ProgressBar = () => {
     return <>
         <h3> Progress bar</h3>
         <section className='widget progress-widget'>
-            {wid < 100 ?
+            {wid <= 100 ?
 
-                <p className='progress-bar' >
-                    <StyledDiv data-width={wid} ref={progressRef} className='progress-bar-indicator' /></p>
-                : <p>Please select a number less than 100</p>}
+                <div className='progress-bar' >
+                    <StyledDiv data-width={wid} ref={progressRef} className='progress-bar-indicator' /></div>
+                : <p>Please select a number less than or equal to 100</p>}
             Enter number: <input type="number" value={wid} onChange={handleChange} />
 
         </section>
