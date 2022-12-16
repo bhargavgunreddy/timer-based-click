@@ -117,3 +117,7 @@ th,
 td {
   border: 1px solid;
 }
+
+.fill {
+  background-color: aqua;
+}

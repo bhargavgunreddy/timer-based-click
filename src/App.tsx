@@ -6,6 +6,7 @@ import StopWatch from './components/stop-watch';
 import TodoList from './components/todo-list';
 import { ProgressBar } from './components/progress-bar';
 import { FormWidget } from './components/form-widget';
+import { StarRating } from './components/star-rating';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <TodoList />
       <ProgressBar />
       <FormWidget />
+      <StarRating />
     </div>
   );
 }
